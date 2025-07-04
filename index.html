@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Apartment Rental</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+   
+  </style>
+</head>
+<body class="content-container">
+  <div class="sidebar card">
+    <h2>Rental</h2>
+    <p>from <b>$99</b><br>per night</p>
+    <form class="container">
+      <label><i class="fa fa-calendar-check-o"></i> Check In</label>
+      <input class="input border margin-bottom" type="text" placeholder="DD MM YYYY">
+      <label><i class="fa fa-calendar"></i> Check Out</label>
+      <input class="input border margin-bottom" type="text" placeholder="DD MM YYYY">
+      <label><i class="fa fa-male"></i> Adults</label>
+      <input class="input border margin-bottom" type="number" min="1" value="1">
+      <label><i class="fa fa-child"></i> Kids</label>
+      <input class="input border margin-bottom" type="number" min="0" value="0">
+      <button class="button green block margin-top" type="button">
+        <i class="fa fa-search"></i> Search availability
+      </button>
+    </form>
+    <hr>
+    <p><i class="fa fa-building"></i> Apartment</p>
+    <p><i class="fa fa-envelope"></i> Subscribe</p>
+  </div>
+  <div class="main-content">
+    <h1 class="text-green">The Apartment</h1>
+    <div style="position:relative; max-width:600px;">
+      <img src="images/livingroom.jpg" alt="Living Room" class="main-img">
+      <div class="img-label">Living Room</div>
+    </div>
+    <div class="gallery">
+      <img src="images/livingroom2.jpg" alt="Living Room">
+      <img src="images/diningroom.jpg" alt="Dining Room">
+      <img src="images/bedroom.jpg" alt="Bedroom">
+      <img src="images/livingroom.jpg" alt="Bathroom">
+    </div>
+    <h2 class="margin-top">The space</h2>
+    <div class="row-padding margin-bottom" style="max-width:600px;">
+      <div class="half">
+        <p><i class="fa fa-male"></i> Max people: 4</p>
+        <p><i class="fa fa-bath"></i> Bathrooms: 2</p>
+      </div>
+      <div class="half">
+        <p><i class="fa fa-clock-o"></i> Check In: After 3PM</p>
+        <p><i class="fa fa-clock-o"></i> Check Out: 12PM</p>
+      </div>
+    </div>
+    <div class="row-padding margin-bottom" style="max-width:600px;">
+      <div class="col s12">
+        <p><i class="fa fa-bed"></i> <b>Bedrooms:</b> 1</p>
+      </div>
+    </div>
+    <div class="row-padding margin-bottom" style="max-width:600px;">
+      <div class="col s12 m6">
+        <h3 class="margin-top">Amenities</h3>
+        <p><i class="fa fa-shower"></i> Shower</p>
+        <p><i class="fa fa-wifi"></i> WiFi</p>
+        <p><i class="fa fa-television"></i> TV</p>
+      </div>
+      <div class="col s12 m6">
+        <h3 class="hide-small margin-top">&nbsp;</h3>
+        <p><i class="fa fa-cutlery"></i> Kitchen</p>
+        <p><i class="fa fa-fire"></i> Heating</p>
+        <p><i class="fa fa-wheelchair"></i> Accessible</p>
+      </div>
+    </div>
+    <hr style="max-width:600px;">
+    <div class="row-padding margin-bottom" style="max-width:600px;">
+      <div class="col s12">
+        <h3>Extra Info</h3>
+        <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>We accept:
+          <img src="" alt="Visa" style="height:20px;vertical-align:middle;"> 
+          <img src="images/OIP (1).jpeg" alt="Mastercard" style="height:20px;vertical-align:middle;"> 
+          <img src="images/OIP.jpeg" alt="PayPal" style="height:20px;vertical-align:middle;">
+        </p>
+      </div>
+    </div>
+    <hr style="max-width:600px;">
+    <div class="row-padding margin-bottom" style="max-width:600px;">
+      <div class="col s12">
+        <h3>Rules</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Subscribe to receive updates on available dates and special offers.</p>
+        <button class="button green third" onclick="document.getElementById('subscribe').style.display='block'">Subscribe</button>
+      </div>
+    </div>
+    <div class="row-padding w3-margin-bottom" style="max-width:600px;">
+      <div class="col s12">
+        <h2>Contact</h2>
+        <p><i class="fa fa-map-marker"></i> Chicago, US</p>
+        <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+        <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+        <p>Questions? Go ahead, ask them:</p>
+        <form>
+          <input class="input border margin-bottom" type="text" placeholder="Name" required>
+          <input class="input border margin-bottom" type="email" placeholder="Email" required>
+          <textarea class="input border margin-bottom" placeholder="Message" rows="3" required></textarea>
+          <button class="button green block" type="submit">Send a Message</button>
+        </form>
+      </div>
+    </div>
+    <footer class="container center margin-top" style="max-width:600px;">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/" target="_blank">w3.css</a></p>
+    </footer>
+  </div>
+</body>
+</html> 
