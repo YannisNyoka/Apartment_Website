@@ -94,7 +94,7 @@
         <h3>Rules</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Subscribe to receive updates on available dates and special offers.</p>
-        <button class="button green third" onclick="document.getElementById('subscribe').style.display='block'">Subscribe</button>
+        <button class="button green third" id="button">Subscribe</button>
       </div>
     </div>
     <div class="row-padding w3-margin-bottom" style="max-width:600px;">
@@ -117,4 +117,10 @@
     </footer>
   </div>
 </body>
+<script>
+  function alert(){
+    alert('The Assignment is Done');
+  }
+  document.getElementById("button").onclick=alert;
+</script>
 </html> 
